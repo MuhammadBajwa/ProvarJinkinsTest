@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testCase id="1">
+  <summary/>
+  <steps>
+    <apiCall apiId="com.provar.plugins.forcedotcom.core.testapis.ApexConnect" name="ApexConnect" testItemId="9" title="Salesforce Connect: Badger_17_Vocalocity_SysAdmin (Test)">
+      <arguments>
+        <argument id="connectionName">
+          <value class="value" valueClass="string">Badger_17_Vocalocity_SysAdmin</value>
+        </argument>
+        <argument id="resultName">
+          <value class="value" valueClass="string">Badger_17_Vocalocity_SysAdmin</value>
+        </argument>
+        <argument id="reuseConnectionName"/>
+        <argument id="resultScope">
+          <value class="value" valueClass="string">Test</value>
+        </argument>
+        <argument id="alreadyOpenBehaviour">
+          <value class="value" valueClass="string">Fail</value>
+        </argument>
+        <argument id="uiApplicationName"/>
+        <argument id="closeAllPrimaryTabs">
+          <value class="value" valueClass="boolean">true</value>
+        </argument>
+        <argument id="quickUiLogin">
+          <value class="value" valueClass="boolean">true</value>
+        </argument>
+        <argument id="privateBrowsingMode"/>
+        <argument id="enableObjectIdLogging">
+          <value class="value" valueClass="boolean">true</value>
+        </argument>
+        <argument id="autoCleanup"/>
+        <argument id="cleanupConnectionName"/>
+        <argument id="logFileLocation"/>
+        <argument id="username"/>
+        <argument id="password"/>
+        <argument id="securityToken"/>
+        <argument id="environment"/>
+        <argument id="lightningMode">
+          <value class="value" valueClass="string">default</value>
+        </argument>
+        <argument id="webBrowser"/>
+      </arguments>
+    </apiCall>
+    <apiCall apiId="com.provar.plugins.forcedotcom.core.testapis.ApexCreateObject" name="ApexCreateObject" parameterGeneratorUri="command:com.provar.plugins.forcedotcom.ui.commands.CreateCustomObjectTestStepCommand" testItemId="2" title="Create Object: Account=&gt;AccountId">
+      <tags>
+        <string>disabled</string>
+      </tags>
+      <arguments>
+        <argument id="objectType">
+          <value class="value" valueClass="string">Account</value>
+        </argument>
+        <argument id="resultIdName">
+          <value class="value" valueClass="string">AccountId</value>
+        </argument>
+        <argument id="apexConnectionName">
+          <value class="value" valueClass="string">Badger_17_Vocalocity_SysAdmin</value>
+        </argument>
+        <argument id="Name">
+          <value class="value" valueClass="string">Do Not Delete</value>
+        </argument>
+        <argument id="RecordTypeId">
+          <value class="value" valueClass="string">Customer</value>
+        </argument>
+        <argument id="AccountNumber">
+          <value class="value" valueClass="string">00001</value>
+        </argument>
+        <argument id="Platform__c">
+          <value class="value" valueClass="string">Essentials</value>
+        </argument>
+        <argument id="AccountType__c">
+          <value class="value" valueClass="string">End-Customer</value>
+        </argument>
+        <argument id="BillingStatus__c">
+          <value class="value" valueClass="string">Normal</value>
+        </argument>
+        <argument id="Catalog__c">
+          <value class="value" valueClass="string">Direct</value>
+        </argument>
+        <argument id="Status__c">
+          <value class="value" valueClass="string">Prospect</value>
+        </argument>
+        <argument id="AccountCategory__c">
+          <value class="value" valueClass="string">Real</value>
+        </argument>
+        <argument id="AccountingSalesChannel__c">
+          <value class="value" valueClass="string">VBS</value>
+        </argument>
+        <argument id="Billing_System_V2__c">
+          <value class="value" valueClass="string">Zuora</value>
+        </argument>
+        <argument id="Provisioning_Management_System__c">
+          <value class="value" valueClass="string">HDAP</value>
+        </argument>
+        <argument id="Provisioning_System__c">
+          <value class="value" valueClass="string">HDAP</value>
+        </argument>
+        <argument id="Response_Time_History__c">
+          <value class="value" valueClass="decimal">90.0</value>
+        </argument>
+        <argument id="SLA_Tracking_Period__c">
+          <value class="value" valueClass="decimal">90.0</value>
+        </argument>
+        <argument id="Seat_Price_Courtesy__c">
+          <value class="value" valueClass="decimal">20.0</value>
+        </argument>
+        <argument id="Seat_Price_Full__c">
+          <value class="value" valueClass="decimal">54.0</value>
+        </argument>
+        <argument id="Seat_Price_VMO__c">
+          <value class="value" valueClass="decimal">15.0</value>
+        </argument>
+        <argument id="Service_Package__c">
+          <value class="value" valueClass="string">None</value>
+        </argument>
+        <argument id="Trunking_Call_Paths__c">
+          <value class="value" valueClass="decimal">0.0</value>
+        </argument>
+        <argument id="SFCCLtngPtr__Number_Closed_Lost_Opportunities__c">
+          <value class="value" valueClass="decimal">0.0</value>
+        </argument>
+        <argument id="SFCCLtngPtr__Number_Closed_Opportunities__c">
+          <value class="value" valueClass="decimal">0.0</value>
+        </argument>
+        <argument id="SFCCLtngPtr__Number_Closed_Won_Opportunities__c">
+          <value class="value" valueClass="decimal">0.0</value>
+        </argument>
+        <argument id="SFCCLtngPtr__Number_Leads_Converted__c">
+          <value class="value" valueClass="decimal">0.0</value>
+        </argument>
+        <argument id="SFCCLtngPtr__Number_Leads_Total__c">
+          <value class="value" valueClass="decimal">0.0</value>
+        </argument>
+        <argument id="SFCCLtngPtr__Number_Open_Opportunities__c">
+          <value class="value" valueClass="decimal">0.0</value>
+        </argument>
+        <argument id="assignmentRuleId"/>
+        <argument id="resultScope">
+          <value class="value" valueClass="string">Test</value>
+        </argument>
+      </arguments>
+      <parameterGeneratorProperties>
+        <propertyValue name="com.provar.plugins.forcedotcom.ui.commands.CreateCustomObjectTestStepCommand.ConnectionName">Badger_17_Vocalocity_SysAdmin</propertyValue>
+        <propertyValue name="com.provar.plugins.forcedotcom.ui.commands.CreateCustomObjectTestStepCommand.CustomObjectName">Account</propertyValue>
+      </parameterGeneratorProperties>
+      <generatedParameters>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Account&amp;field=Name" name="Name" title="Name"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Account&amp;field=RecordTypeId" name="RecordTypeId" title="RecordTypeId"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Account&amp;field=AccountNumber" name="AccountNumber" title="AccountNumber"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Account&amp;field=Platform__c" name="Platform__c" title="Platform__c"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Account&amp;field=AccountType__c" name="AccountType__c" title="AccountType__c"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Account&amp;field=BillingStatus__c" name="BillingStatus__c" title="BillingStatus__c">
+          <summary>Status of Account from a Billing perspective. Used to display status of account in SFDC so Billing status of returning customers is known to rep that is reactivating the account</summary>
+        </apiParam>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Account&amp;field=Catalog__c" name="Catalog__c" title="Catalog__c"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Account&amp;field=Status__c" name="Status__c" title="Status__c"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Account&amp;field=AccountCategory__c" name="AccountCategory__c" title="AccountCategory__c"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Account&amp;field=AccountingSalesChannel__c" name="AccountingSalesChannel__c" title="AccountingSalesChannel__c"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Account&amp;field=Billing_System_V2__c" name="Billing_System_V2__c" title="Billing_System_V2__c"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Account&amp;field=Provisioning_Management_System__c" name="Provisioning_Management_System__c" title="Provisioning_Management_System__c"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Account&amp;field=Provisioning_System__c" name="Provisioning_System__c" title="Provisioning_System__c"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Account&amp;field=Response_Time_History__c" name="Response_Time_History__c" title="Response_Time_History__c">
+          <summary>Total number of days "Response Time" records are stored in the system. Once records reach this threshold, they are automatically purged. The default is 90 days.</summary>
+        </apiParam>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Account&amp;field=SLA_Tracking_Period__c" name="SLA_Tracking_Period__c" title="SLA_Tracking_Period__c"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Account&amp;field=Seat_Price_Courtesy__c" name="Seat_Price_Courtesy__c" title="Seat_Price_Courtesy__c"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Account&amp;field=Seat_Price_Full__c" name="Seat_Price_Full__c" title="Seat_Price_Full__c"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Account&amp;field=Seat_Price_VMO__c" name="Seat_Price_VMO__c" title="Seat_Price_VMO__c"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Account&amp;field=Service_Package__c" name="Service_Package__c" title="Service_Package__c"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Account&amp;field=Trunking_Call_Paths__c" name="Trunking_Call_Paths__c" title="Trunking_Call_Paths__c"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Account&amp;field=SFCCLtngPtr__Number_Closed_Lost_Opportunities__c" name="SFCCLtngPtr__Number_Closed_Lost_Opportunities__c" title="SFCCLtngPtr__Number_Closed_Lost_Opportunities__c"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Account&amp;field=SFCCLtngPtr__Number_Closed_Opportunities__c" name="SFCCLtngPtr__Number_Closed_Opportunities__c" title="SFCCLtngPtr__Number_Closed_Opportunities__c"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Account&amp;field=SFCCLtngPtr__Number_Closed_Won_Opportunities__c" name="SFCCLtngPtr__Number_Closed_Won_Opportunities__c" title="SFCCLtngPtr__Number_Closed_Won_Opportunities__c"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Account&amp;field=SFCCLtngPtr__Number_Leads_Converted__c" name="SFCCLtngPtr__Number_Leads_Converted__c" title="SFCCLtngPtr__Number_Leads_Converted__c"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Account&amp;field=SFCCLtngPtr__Number_Leads_Total__c" name="SFCCLtngPtr__Number_Leads_Total__c" title="SFCCLtngPtr__Number_Leads_Total__c"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Account&amp;field=SFCCLtngPtr__Number_Open_Opportunities__c" name="SFCCLtngPtr__Number_Open_Opportunities__c" title="SFCCLtngPtr__Number_Open_Opportunities__c"/>
+      </generatedParameters>
+    </apiCall>
+    <apiCall apiId="com.provar.plugins.forcedotcom.core.ui.UiWithScreen" name="UiWithScreen" testItemId="5" title="On Zqu__ Select Products page">
+      <arguments>
+        <argument id="uiConnectionName">
+          <value class="value" valueClass="string">Badger_17_Vocalocity_SysAdmin</value>
+        </argument>
+        <argument id="target">
+          <value class="uiTarget" uri="ui:pageobject:target?pageId=pageobjects.zqu__SelectProducts"/>
+        </argument>
+        <argument id="targetDescription">
+          <value class="value" valueClass="string">On Zqu__ Select Products page</value>
+        </argument>
+        <argument id="navigate">
+          <value class="value" valueClass="string">Always</value>
+        </argument>
+        <argument id="windowSelection">
+          <value class="value" valueClass="string">Default</value>
+        </argument>
+        <argument id="windowSize">
+          <value class="value" valueClass="string">Default</value>
+        </argument>
+        <argument id="closeWindow"/>
+        <argument id="captureBefore">
+          <value class="value" valueClass="string">false</value>
+        </argument>
+        <argument id="captureAfter">
+          <value class="value" valueClass="string">false</value>
+        </argument>
+        <argument id="uiTargetUrl">
+          <value class="value" valueClass="string">https://badger17-vonagebusiness.cs1.force.com/cat/?ref=a39S0000000AIYJ</value>
+        </argument>
+      </arguments>
+      <clauses>
+        <clause name="substeps" testItemId="6">
+          <steps>
+            <apiCall apiId="com.provar.plugins.forcedotcom.core.ui.UiDoAction" name="UiDoAction" testItemId="7" title="Call the testURL method">
+              <arguments>
+                <argument id="locator">
+                  <value class="uiLocator" uri="ui:pageobject:method?pageId=pageobjects.zqu__SelectProducts&amp;operation=testURL"/>
+                </argument>
+                <argument id="interaction">
+                  <value class="uiInteraction" uri="ui:interaction?name=invoke"/>
+                </argument>
+                <argument id="interactionDescription">
+                  <value class="value" valueClass="string">Call the testURL method</value>
+                </argument>
+                <argument id="beforeWait"/>
+                <argument id="afterWait"/>
+                <argument id="autoRetry"/>
+                <argument id="captureBefore">
+                  <value class="value" valueClass="string">false</value>
+                </argument>
+                <argument id="captureAfter">
+                  <value class="value" valueClass="string">false</value>
+                </argument>
+                <argument id="param_arg0">
+                  <value class="value" valueClass="string">tet123</value>
+                </argument>
+              </arguments>
+              <generatedParameters>
+                <apiParam group="value" name="param_arg0" title="Id">
+                  <type>
+                    <textType/>
+                  </type>
+                </apiParam>
+              </generatedParameters>
+            </apiCall>
+          </steps>
+        </clause>
+      </clauses>
+      <generatedParameters>
+        <apiParam group="target" name="uiTargetUrl" title="Web Page">
+          <type>
+            <textType/>
+          </type>
+        </apiParam>
+      </generatedParameters>
+    </apiCall>
+  </steps>
+</testCase>

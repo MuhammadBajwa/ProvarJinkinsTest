@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testCase id="0" registryId="8e3dc2ed-e7df-4707-a214-34a80e657682" visibility="Internal">
+  <summary/>
+  <steps>
+    <apiCall apiId="com.provar.plugins.forcedotcom.core.testapis.ApexConnect" name="ApexConnect" testItemId="1" title="Salesforce Connect: Badger_17_Vocalocity_SysAdmin (Test)">
+      <arguments>
+        <argument id="connectionName">
+          <value class="value" valueClass="string">Badger_17_Vocalocity_SysAdmin</value>
+        </argument>
+        <argument id="resultName">
+          <value class="value" valueClass="string">Badger_17_Vocalocity_SysAdmin</value>
+        </argument>
+        <argument id="resultScope">
+          <value class="value" valueClass="string">Test</value>
+        </argument>
+        <argument id="uiApplicationName"/>
+        <argument id="quickUiLogin">
+          <value class="value" valueClass="boolean">true</value>
+        </argument>
+        <argument id="closeAllPrimaryTabs">
+          <value class="value" valueClass="boolean">true</value>
+        </argument>
+        <argument argId="aa504b04-6b78-4fb0-bec5-335f250ec932" id="reuseConnectionName">
+          <value class="variable">
+            <path element="reuseConnectionName"/>
+          </value>
+        </argument>
+        <argument id="alreadyOpenBehaviour">
+          <value class="value" valueClass="string">Fail</value>
+        </argument>
+        <argument id="privateBrowsingMode"/>
+        <argument id="enableObjectIdLogging">
+          <value class="value" valueClass="boolean">true</value>
+        </argument>
+        <argument id="autoCleanup"/>
+        <argument argId="5928a947-9069-4c28-91a8-d65607723775" id="cleanupConnectionName"/>
+        <argument id="logFileLocation"/>
+        <argument id="username"/>
+        <argument id="password"/>
+        <argument id="securityToken"/>
+        <argument id="environment"/>
+        <argument id="lightningMode">
+          <value class="value" valueClass="string">default</value>
+        </argument>
+        <argument id="webBrowser"/>
+      </arguments>
+    </apiCall>
+    <apiCall apiId="com.provar.plugins.forcedotcom.core.testapis.ApexCreateObject" name="ApexCreateObject" parameterGeneratorUri="command:com.provar.plugins.forcedotcom.ui.commands.CreateCustomObjectTestStepCommand" testItemId="2" title="Create Object: Lead=&gt;LeadId">
+      <arguments>
+        <argument id="objectType">
+          <value class="value" valueClass="string">Lead</value>
+        </argument>
+        <argument id="resultIdName">
+          <value class="value" valueClass="string">LeadId</value>
+        </argument>
+        <argument id="apexConnectionName">
+          <value class="value" valueClass="string">Badger_17_Vocalocity_SysAdmin</value>
+        </argument>
+        <argument id="LastName">
+          <value class="value" valueClass="string">User</value>
+        </argument>
+        <argument id="FirstName">
+          <value class="value" valueClass="string">Testing</value>
+        </argument>
+        <argument id="RecordTypeId">
+          <value class="value" valueClass="string">Prospects</value>
+        </argument>
+        <argument id="Company">
+          <value class="compound">
+            <parts>
+              <value valueClass="string">test company </value>
+              <funcCall id="UniqueId">
+                <argument id="length">
+                  <value class="value" valueClass="decimal">4</value>
+                </argument>
+              </funcCall>
+            </parts>
+          </value>
+        </argument>
+        <argument id="Street">
+          <value class="value" valueClass="string">23 main street</value>
+        </argument>
+        <argument id="City">
+          <value class="value" valueClass="string">Holmdel</value>
+        </argument>
+        <argument id="State">
+          <value class="value" valueClass="string">NJ</value>
+        </argument>
+        <argument id="PostalCode">
+          <value class="value" valueClass="string">07733</value>
+        </argument>
+        <argument id="Country">
+          <value class="value" valueClass="string">United States</value>
+        </argument>
+        <argument id="Phone">
+          <value class="value" valueClass="string">1234567890</value>
+        </argument>
+        <argument id="Email">
+          <value class="value" valueClass="string">vonmailcheck@gmail.com</value>
+        </argument>
+        <argument id="LeadSource">
+          <value class="value" valueClass="string">Sales Line</value>
+        </argument>
+        <argument id="Status">
+          <value class="value" valueClass="string">Qualified</value>
+        </argument>
+        <argument id="Industry">
+          <value class="value" valueClass="string">Architectural/Engineering</value>
+        </argument>
+        <argument id="Extension_to_Dial__c">
+          <value class="value" valueClass="string">#804 (MSR)</value>
+        </argument>
+        <argument id="SFGA__CorrelationID__c">
+          <value class="value" valueClass="string">none</value>
+        </argument>
+        <argument id="SFGA__Correlation_Data__c">
+          <value class="value" valueClass="string">none</value>
+        </argument>
+        <argument id="SFGA__Web_Source__c">
+          <value class="value" valueClass="string">none</value>
+        </argument>
+        <argument id="Promotion_mentioned_in_conversation__c">
+          <value class="value" valueClass="string">None</value>
+        </argument>
+        <argument id="No_Office_Locations__c">
+          <value class="value" valueClass="string">0 - Only Tele Commuting</value>
+        </argument>
+        <argument id="Time_Frame__c">
+          <value class="value" valueClass="string">3 – 6 Months</value>
+        </argument>
+        <argument id="SalesRep__c"/>
+        <argument id="Lead_Category__c">
+          <value class="value" valueClass="string">Salesline</value>
+        </argument>
+        <argument id="Lead_Status__c">
+          <value class="value" valueClass="string">Qualified</value>
+        </argument>
+        <argument id="Reengaged_Value__c">
+          <value class="value" valueClass="decimal">1.0</value>
+        </argument>
+        <argument id="Last_Touch_Campaign__c"/>
+        <argument id="Source_Campaign__c"/>
+        <argument id="Platform__c">
+          <value class="value" valueClass="string">Essentials</value>
+        </argument>
+        <argument id="assignmentRuleId"/>
+        <argument id="resultScope">
+          <value class="value" valueClass="string">Test</value>
+        </argument>
+        <argument id="Number_of_Extensions__c">
+          <value class="value" valueClass="decimal">2</value>
+        </argument>
+      </arguments>
+      <parameterValueSources/>
+      <parameterGeneratorProperties>
+        <propertyValue name="com.provar.plugins.forcedotcom.ui.commands.CreateCustomObjectTestStepCommand.ConnectionName">Badger_17_Vocalocity_SysAdmin</propertyValue>
+        <propertyValue name="com.provar.plugins.forcedotcom.ui.commands.CreateCustomObjectTestStepCommand.CustomObjectName">Lead</propertyValue>
+      </parameterGeneratorProperties>
+      <generatedParameters>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Lead&amp;field=LastName" name="LastName" title="LastName"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Lead&amp;field=FirstName" name="FirstName" title="FirstName"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Lead&amp;field=RecordTypeId" name="RecordTypeId" title="RecordTypeId"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Lead&amp;field=Company" name="Company" title="Company"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Lead&amp;field=Street" name="Street" title="Street"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Lead&amp;field=City" name="City" title="City"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Lead&amp;field=State" name="State" title="State"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Lead&amp;field=PostalCode" name="PostalCode" title="PostalCode"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Lead&amp;field=Country" name="Country" title="Country"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Lead&amp;field=Phone" name="Phone" title="Phone"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Lead&amp;field=Email" name="Email" title="Email"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Lead&amp;field=LeadSource" name="LeadSource" title="LeadSource">
+          <summary>BZemail - RealEstate\t\nBZemail - Healthcare\nBZemail - Legal\nBZemail - Insurance\nBZemail - Financial</summary>
+        </apiParam>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Lead&amp;field=Status" name="Status" title="Status"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Lead&amp;field=Industry" name="Industry" title="Industry"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Lead&amp;field=Extension_to_Dial__c" name="Extension_to_Dial__c" title="Extension_to_Dial__c"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Lead&amp;field=SFGA__CorrelationID__c" name="SFGA__CorrelationID__c" title="SFGA__CorrelationID__c"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Lead&amp;field=SFGA__Correlation_Data__c" name="SFGA__Correlation_Data__c" title="SFGA__Correlation_Data__c"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Lead&amp;field=SFGA__Web_Source__c" name="SFGA__Web_Source__c" title="SFGA__Web_Source__c"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Lead&amp;field=Promotion_mentioned_in_conversation__c" name="Promotion_mentioned_in_conversation__c" title="Promotion_mentioned_in_conversation__c"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Lead&amp;field=No_Office_Locations__c" name="No_Office_Locations__c" title="No_Office_Locations__c">
+          <summary>Office Locations</summary>
+        </apiParam>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Lead&amp;field=Time_Frame__c" name="Time_Frame__c" title="Time_Frame__c"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Lead&amp;field=SalesRep__c" name="SalesRep__c" title="SalesRep__c">
+          <summary>This is the rep that sent the customer to a closer</summary>
+        </apiParam>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Lead&amp;field=Lead_Category__c" name="Lead_Category__c" title="Lead_Category__c"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Lead&amp;field=Lead_Status__c" name="Lead_Status__c" title="Lead_Status__c">
+          <summary>Marketing field used to track leads</summary>
+        </apiParam>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Lead&amp;field=Reengaged_Value__c" name="Reengaged_Value__c" title="Reengaged_Value__c"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Lead&amp;field=Last_Touch_Campaign__c" name="Last_Touch_Campaign__c" title="Last_Touch_Campaign__c"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Lead&amp;field=Source_Campaign__c" name="Source_Campaign__c" title="Source_Campaign__c"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Lead&amp;field=Platform__c" name="Platform__c" title="Platform__c"/>
+        <apiParam group="fields" modelBinding="sf:ui:binding:object?object=Lead&amp;field=Number_of_Extensions__c" name="Number_of_Extensions__c" title="Number_of_Extensions__c"/>
+      </generatedParameters>
+    </apiCall>
+  </steps>
+  <params>
+    <param linkedToUrl="provar:hasvalue:aa504b04-6b78-4fb0-bec5-335f250ec932" name="reuseConnectionName" title="Override Connection">
+      <summary>The name of an already opened connect to re-use.</summary>
+      <type>
+        <connectionType>
+          <constraints>
+            <valueConstraint name="variableName">true</valueConstraint>
+            <valueConstraint name="requiredCapabilities">sfSoapConnect</valueConstraint>
+          </constraints>
+        </connectionType>
+      </type>
+    </param>
+  </params>
+  <outputParams>
+    <param name="LeadId" title="LeadId">
+      <summary>The name under which the resulting Object Id will be stored.</summary>
+      <type>
+        <textType>
+          <constraints>
+            <valueConstraint name="minLength">0</valueConstraint>
+            <valueConstraint name="maxLength">9999</valueConstraint>
+            <valueConstraint name="regex"/>
+          </constraints>
+        </textType>
+      </type>
+      <sourceValue class="variable">
+        <path element="LeadId"/>
+      </sourceValue>
+    </param>
+  </outputParams>
+  <args>
+    <argument id="reuseConnectionName"/>
+  </args>
+  <outputArgs>
+    <outputArgument id="LeadId">
+      <name class="value" valueClass="string">LeadId</name>
+    </outputArgument>
+  </outputArgs>
+</testCase>
